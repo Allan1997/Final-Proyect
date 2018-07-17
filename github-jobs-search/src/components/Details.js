@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 class Details extends Component {
   render() {
     return(
+      <h2> Job Details</h2>
       <div className="jobs-container">
         <div className="job-details">
           <div className="details-path">

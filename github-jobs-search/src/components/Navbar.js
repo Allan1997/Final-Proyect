@@ -10,6 +10,7 @@ class Navbar extends Component {
           <img src={GITHUB} className="logo" alt="logo" /> 
         </div>
       </div>
+      <hr>
     )
   }   
 }

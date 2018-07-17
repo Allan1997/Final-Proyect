@@ -3,6 +3,7 @@
 }
 .search-fields {
   width: 100%;
+  display: inline-block;
 }
 .input {
   height: 20px;

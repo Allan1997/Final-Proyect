@@ -3,12 +3,13 @@
   font-weight: bold;
 }
 .brand {
-  margin: 0 130px 0 130px;
-  padding: 12px 12px 0 0;
-  text-align: left;
+	margin: 0 130px 0 130px;
+	padding: 12px 12px 0 0;
+	text-align: left;
 }
 .navbar {
   height: 50px;
   background: #2B7FC3;
   border-top: 4px solid #1D5C8F;
+  width: 100%;
 }

@@ -1,42 +1,6 @@
 import React, { Component } from 'react';
 
-//Import Api
-import JobsApi from '../lib/JobsApi.js';
-
 class Search extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      location : null,
-      description: null
-    }
-
-  this.handleInputChange = this.handleInputChange.bind(this);
-  this.handleSubmit = this.handleSubmit.bind(this);
-    
-  }
-  handleInputChange(e) {
-    const {value, name} = e.target;
-    this.setState({
-      [name]: value
-    });
-  }
-  //Si no encuentra en la búsqueda location o description manda null.
-  handleSubmit(e) {
-    let AuxSearch = {
-      location : this.state.location || null,
-      description : this.state.description || null,
-    } 
-    JobsApi('GET', AuxSearch)
-      .then((results) => {
-        console.log(results);
-      })
-      .catch((reason) => {
-        console.error(reason);
-      });
-    e.preventDefault();
-  }
-  
   render() {
     return(
       <div className="search-container">
